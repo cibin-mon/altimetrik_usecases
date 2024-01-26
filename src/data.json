@@ -1,0 +1,53 @@
+{
+  "brands": ["Maruthi Suzuki", "Hyundai", "Renault", "Honda", "Tata", "Ford", "Volkswagen", "Mahindra", "Toyato", "BMW", "Mercedes Benz", "More"],
+  "formFields": [
+    { "fieldName": "Model", "fieldKey": "model", "fieldType": "text" },
+    { "fieldName": "Location", "fieldKey": "location", "fieldType": "text" },
+    { "fieldName": "Color", "fieldKey": "color", "fieldType": "text" },
+    { "fieldName": "No of Owners", "fieldKey": "noOfOwners", "fieldType": "text" },
+    { "fieldName": "Year of Manufacture", "fieldKey": "yearOfManufacture", "fieldType": "text" },
+    { "fieldName": "Transmission", "fieldKey": "transmission", "fieldType": "text" },
+    { "fieldName": "Insurance Valid upto", "fieldKey": "insuranceValidUpto", "fieldType": "text" },
+    { "fieldName": "External Fitments", "fieldKey": "externalFitments", "fieldType": "text" },
+    { "fieldName": "Kms", "fieldKey": "kms", "fieldType": "text" },
+    { "fieldName": "Photo", "fieldKey": "photo", "fieldType": "file" }
+  ],
+  "filters": [
+    {
+      "filterName": "Location",
+      "filterkey": "location",
+      "filtertype": "select"
+    },
+    {
+      "filterName": "Color",
+      "filterkey": "color",
+      "filtertype": "checkbox"
+    },
+    {
+      "filterName": "No of Owners",
+      "filterkey": "noOfOwners",
+      "filtertype": "radio"
+    },
+    {
+      "filterName": "Transmission",
+      "filterkey": "transmission",
+      "filtertype": "radio"
+    },
+    {
+      "filterName": "Kms",
+      "filterkey": "kms",
+      "filtertype": "chips",
+      "options": [
+        { "label": "Less than 20k", "value": 20000, "type": "less" },
+        { "label": "20k - 60k", "value": [20000, 60000], "type": "between" },
+        { "label": "More than 60k", "value": 60000, "type": "more" }
+      ]
+    }
+  ],
+  "dummy":[
+    { "model": "Maruthi Suzuki", "location": "Bangalore", "color": "Red", "noOfOwners": "1", "yearOfManufacture": "2023", "transmission": "Automatic", "insuranceValidUpto": "1", "externalFitments": "No", "kms": "20000", "photo": "C:\\fakepath\\Screenshot (1).png" },
+    { "model": "Hyundai", "location": "Tamil Nadu", "color": "Blue", "noOfOwners": "3", "yearOfManufacture": "2021", "transmission": "Manual", "insuranceValidUpto": "2", "externalFitments": "Yes", "kms": "10000", "photo": "C:\\fakepath\\Screenshot (3).png" },
+    { "model": "Mahindra", "location": "Pondycherry", "color": "Yellow", "noOfOwners": "2", "yearOfManufacture": "2003", "transmission": "Automatic", "insuranceValidUpto": "5", "externalFitments": "No", "kms": "10000", "photo": "C:\\fakepath\\Screenshot (8).png" },
+    { "model": "Mercedes Benz", "location": "Bangalore", "color": "Green", "noOfOwners": "6", "yearOfManufacture": "2002", "transmission": "Manual", "insuranceValidUpto": "6", "externalFitments": "No", "kms": "70000", "photo": "C:\\fakepath\\Screenshot (7).png" }
+  ]
+}
